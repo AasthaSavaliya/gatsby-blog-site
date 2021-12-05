@@ -1,11 +1,17 @@
 import * as React from "react"
-// import {Contact} from "../components/Contact";
+import {Link} from "gatsby"
+import Header from '../components/header'
+import Footer from '../components/footer'
+import NewsItems from '../components/news-items'
 
+// markup
 const IndexPage = () => {
-  return (
-    <>
-      hey
-    </>
+    return (
+      <>
+          <Header/>
+            <NewsItems/>
+          <Footer/>
+      </>
   )
 }
 
