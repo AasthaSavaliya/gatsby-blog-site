@@ -21,15 +21,15 @@ const NewsItems = () =>
     `}
         render={data =>
             <>
-                <div className="blog-container">
-              {data?.allContentfulNews?.edges?.map(({ node }, i) => (
-                  <div className="blog-card">
-                      <img src='{node?.thumbnail?.file?.url}' />
-                      <h4>{node?.title}</h4>
-                      <Link to="#">Read more</Link>
+                    <div className="blog-container">
+                      {data?.allContentfulNews?.edges?.map(({ node }, i) => (
+                          <div className="blog-card">
+                              <img src='{node?.thumbnail?.file?.url}' />
+                              <h4>{node?.title}</h4>
+                              <Link to="#">Read more</Link>
+                          </div>
+                      ))}
                   </div>
-              ))}
-          </div>
             </>
         }
     ></StaticQuery>

@@ -3,14 +3,18 @@ import {Link, graphql} from "gatsby"
 import Header from "../components/header";
 import Footer from "../components/footer";
 import NewsItems from "../components/news-items";
+import {Container} from "react-bootstrap";
 
 // markup
 const NewsPage = () => {
     return (
         <>
-            <Header/>
+            <Container>
+                <Header/>
+                <h1>News</h1>
                 <NewsItems/>
-            <Footer/>
+                <Footer/>
+            </Container>
         </>
     )
 }
